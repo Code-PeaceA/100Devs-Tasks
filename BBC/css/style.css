@@ -1,0 +1,162 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     font-family:Arial, Helvetica, sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header{
+     height: 30px;
+     background: black;
+     font-size: 0.75em;
+     font-weight: bold;
+     color: white;
+     width: 100%;
+     /* position: fixed; */
+}
+
+main, section{
+     width: 98%;
+     margin: auto;
+     padding-top: 1%;
+     color: white;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+/** header styles **/
+
+.headerlogo, ul, form{
+     float: left;
+}
+
+.headerlogo{
+     width: 10%;
+}
+
+form{
+     width: 15%;
+     padding-top: 5px;
+     padding-bottom: 5px;
+}
+
+ul{
+     width: 75%;
+     padding: 0;
+     margin: 0;
+}
+
+li{
+     float:left;
+     list-style: none;
+     padding: 1% 2%;
+     border-left: 0.1em solid white;
+}
+
+li:last-of-type{
+     border-right: 0.1em solid white;
+}
+
+.signin, .more{
+     width: 15%;
+}
+
+/** Main styles **/
+
+h2{
+     color: gray;
+     font-weight: bold;
+     font-size: 1.2em;
+}
+span{
+     color: lightgrey;
+     font-weight: normal;
+     float: right;
+}
+
+.primarydiv, .secondarydiv{
+     width: 49.5%;
+     height: 300px;
+}
+
+.primarydiv{
+     float: left;
+}
+
+.secondarydiv{
+     float: right;
+}
+
+main figure{
+     background-color: gray;
+     margin: 0;
+}
+
+h1{
+     font-size: 1.4em;
+     font-weight: 500;
+}
+
+h3{
+     font-size: 1em;
+     font-weight: 500;;
+}
+
+p, figcaption{
+     font-size: 0.8em;
+     font-weight: 300;
+}
+
+h1, h3, p, figcaption{
+     margin: 0.8em 0;
+     padding-left: 18px;
+}
+
+.primary{
+     height: 100%;
+}
+
+.secondary{
+     float: right;
+     width: 50%;
+     height: 50%
+}
+
+/** section styles **/
+
+section figure{
+     background-color: gainsboro;
+     margin: 0;
+     height: 150px;
+}
+
+.news_section{
+     float: left;
+     width: 33.3333%;
+}
