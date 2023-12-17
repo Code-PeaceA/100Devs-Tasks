@@ -1,0 +1,209 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     font-family:Arial, Helvetica, sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header{
+     height: 40px;
+     border-bottom: 1px solid lightgray;
+     font-size: 0.7em;
+     font-weight: 700;
+     color: blue;
+}
+
+div{
+     width: 60%;
+     margin: 0 auto;
+}
+
+.bodyfig{
+     float: left;
+     width: 50%;
+     margin: 0;
+     padding: 10% 0;
+}
+
+div > section{
+     float: right;
+     width: 50%;
+     padding: 15% 0;
+}
+   
+div + section{
+     clear: both;
+     background: bisque;
+     padding: 1% 0 20% 0;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+/******************************************
+/* Header Styles
+/*******************************************/
+
+nav{
+     width: 60%;
+     height: 100%;
+     margin: auto;
+}
+
+form, .navul{
+     width: 35%;
+     height: 100%;
+     float: left;
+}
+
+form{
+     padding: 0 1%;
+     margin-right: 3.75%;
+}
+
+select{
+     display: none;
+}
+
+layer{
+     float: left;
+}
+
+input{
+     float: right;
+     border: none;
+     background-color: lightgrey;
+     height: 25px;
+     margin-top: 7.5px;
+     border-radius: 3px;
+     padding-left: 5px;
+     font-weight: 700;
+     color: blue;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+     color: blue;
+     opacity: 1; /* Firefox */
+   }
+
+.headfig{
+     width: 15%;
+     margin: 0 3.75%;
+     float: left;
+}
+
+.logo-img{
+     width: 100%;
+     margin-top: 12px;
+}
+
+.navul{
+     margin: 0 0 0 3.75%;
+     padding: 0 1%;
+}
+
+.navli{
+     list-style-type: none;
+     padding: 0 11.25%;
+     float: left;
+}
+
+.navli:first-of-type{
+     padding-left: 0;
+}
+
+.navli:last-of-type{
+     padding-right: 0;
+}
+
+select, layer, .navli{
+     margin-top: 13px;
+}
+
+/******************************************
+/* Figure styles
+/*******************************************/
+
+.bodyimg{
+     width: 100%;
+     float: right;
+}
+
+h1, h2{
+     font-family: serif;
+     line-height: 1em;
+}
+
+h1, h2, p{
+     margin: 5% 0;
+}
+
+h1{
+     font-size: 2.4em;
+     font-weight: 500;
+}
+
+h2{
+     font-size: 2em;
+     font-weight: 500;
+     text-align: center;
+}
+
+p{
+     font-size: 0.6em;
+     font-weight: lighter;
+     line-height: 1.8em;
+}
+
+.secul{
+     width: 100%;
+     margin: 10% 0;
+     padding: 0;
+}
+
+.secli{
+     float: left;
+     list-style-type: none;
+     margin-right: 1.5%;
+}
+
+.secli:last-of-type{
+     margin-right: 0;
+}
+
+.secli a{
+     color: white;
+     width: 12%;
+     background: blue;
+     border-radius: 3px;
+     padding: 6px 12px;
+     font-size: 0.6em;
+}
+
