@@ -1,1 +1,305 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
 
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     font-family: ff-good-headline-web-pro-com, sans-serif;
+     /* font-family: ff-good-headline-web-pro-com, sans-serif; */
+     letter-spacing: 0.1em;
+}
+
+h1, h2, h3, a{
+     text-transform: uppercase;
+     margin: 0;
+}
+
+p{
+     margin: 0;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header, footer{
+     padding: 3% 4%;
+     color: #F2E7DC;
+}
+
+header {
+     height: 650px;
+     width: 100vw;
+     background: black;
+     overflow: hidden;
+     background: #027373;  /* fallback colour. Make sure this is just one solid colour. */
+     background: -webkit-linear-gradient(#a9d9d0dd, #027373dd), url("../images/header-image.jpeg") no-repeat center/100%;
+     background: linear-gradient(#A9D9D0dd, #027373dd), url("../images/header-image.jpeg") no-repeat center/100%; /* The least supported option. */
+}
+
+section{
+     color: #0D0D0D;
+     padding: 10% 4%;
+}
+
+footer {
+     background-color: #027373;
+}
+
+/******************************************
+/* HEADER STYLES
+/*******************************************/
+
+header a{
+     color: #F2E7DC;
+}
+
+.header-nav{
+     margin-bottom: 10%;
+}
+
+.header-nav a{
+     font-size: 1.1em;
+     font-weight: 700;
+     margin: 5px 0;
+     width: 4em;
+     text-align: center;
+     padding-top: 2px;
+     padding-bottom: 1px;
+     background: transparent;
+     border-radius: 3px;
+}
+
+.header-nav a:nth-child(2){
+     margin-left: 4%;
+}
+
+.nav-classes, .nav-hireus{
+     float: left;
+}
+
+a[class="nav-donate"]{
+     float: right;
+     background: #F2E7DC;
+     color: #027373;
+}
+
+.nav-logo{
+     display: inline-block;
+     width: 5%;
+     margin: 0 30%;
+}
+
+.nav-logo img{
+     width: 100%;
+}
+
+h1, header p{
+     width: 90%;
+     margin: 5% auto;
+     font-weight: 700;
+     text-align: center;
+}
+
+h1 {
+     font-size: 6.5em;
+}
+
+header p{
+     font-size: 1.7em;
+}
+
+.header-vid {
+     display: inline-block;
+     width: 100%;
+     text-align: center;
+     text-transform: none;
+     font-size: 2em;
+     font-weight: 400;
+     margin: 0 auto;
+}
+
+/******************************************
+/* SECTION STYLES
+/*******************************************/
+
+.why, .volunteer{
+     background-color: #F2E7DC;
+}
+
+.classes{
+     background-color: #A9D9D0;
+}
+
+h2, section p {
+     width: 60%;
+     text-align: center;
+     margin: 1% auto;
+}
+
+h2{
+     font-size: 3.5em;
+     margin-top: 0;
+}
+
+section p{
+     font-size: 1.8em;
+}
+
+.visit-gym{
+     float: left;
+}
+
+.hire-us{
+     float: right;
+}
+
+.visit-gym, .hire-us{
+     width: 46%;
+     margin: 0 2%;
+}
+
+.classes div div{
+     width: 75%;
+     height: 200px;
+     background-color: #F2E7DC;
+     margin: 0 auto;
+     margin-bottom: 10%;
+     box-shadow: 0 0 10px #027373;
+}
+
+h3, .classes p{
+     text-align: center;
+     margin: 5% auto;
+     width: 100%;
+}
+
+h3{
+     font-size: 2em;
+}
+
+.classes p{
+     font-size: 1.5em;
+}
+
+section a{
+     color: #027373;
+     padding: 4% 0;
+     background-color: transparent;
+     border: 1px solid #027373;
+     display: inline-block;
+     width: 50%;
+     text-align: center;
+     font-size: 1.7em;
+     font-weight: 700;
+     margin: 0 25%;
+}
+
+.volunteer a{
+     width: 20%;
+     padding: 1%;
+     margin: 2% 40%;
+}
+
+
+/******************************************
+/* FOOTER STYLES
+/*******************************************/
+
+
+.foot-links{
+     width: 48%;
+     float: left;
+     margin-right: 2%;
+}
+
+.foot-address{
+     width: 18%;
+     float: right;
+     margin-left: 2%;
+     vertical-align: bottom;
+}
+
+.foot-links, .foot-address{
+     font-size: 1em;
+     font-weight: 700;
+}
+
+.icons{
+     margin-right: 5%;
+     margin-bottom: 6%;
+}
+
+.foot-links p{
+     color: #f2e7dc88;
+     margin-top: 4%;
+}
+
+.foot-links a{
+     text-transform: none;
+     color: #F2E7DC;
+     margin-right: 4%;
+}
+
+.foot-links p, .foot-address p{
+     text-transform: uppercase;
+     font-size: 1.3em;
+}
+
+.foot-address p, .foot-address address, .tel{
+     margin-bottom: 3%;
+}
+
+.foot-address address, .tel{
+     font-style: normal;
+     font-weight: normal;
+}
+
+.foot-address address, .tel, .email{
+     font-size: 1em;
+}
+
+.tel, .email{
+     display: block;
+     color: #F2E7DC;
+     text-transform: none;
+}
+
+.divider{
+     padding: 1% 0;
+     border-bottom: 1px solid #F2E7DC;
+}
+
+.copyright{
+     padding: 1% 0;
+}
+
+.copyright p{
+     float: left;
+     font-weight: 700;
+     padding-top: 1%;
+}
+
+.copyright img{
+     float: right;
+     width: 3%;
+}
